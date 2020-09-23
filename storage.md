@@ -9,7 +9,7 @@ pwd
 
 Home directories have a quota of 50GB each, meaning that the maximum storage available to a single user's `/home/userid` folder is 50GB.  
 
-`/projects` is the primary active storage directory for users and lab groups.  It is accessible by all cluster nodes.  Each labgroup has a `/projects/PIname-lab` folder with a quota of 75TB.
+`/projects` is the primary active storage directory for users and lab groups.  It is accessible by all cluster nodes.  Each labgroup has a `/projects/PIname-lab` folder with a quota of 35TB.
 
 `/fastscratch` is a temporary directory pinned to the fastest in-house storage we have available.  It is accessible by all cluster nodes.  It has a total capacity of 150TB, and is meant to serve as 'scratch paper' for computational analysis.  Users can specify that their jobs output to `/fastscratch`, and then copy their important files back into their `/home` or `/project` directories.  Bioinformatics software can generate a large number of temporary and intermediate files, that are often no longer needed after the analysis completes, and can accidently consume large quantities of storage.  Files in the `/fastscratch` directory that are 10 days old will be erased automatically by the current storage system policy, and IT reserves the right to erase any and all data on `/fastscratch` without notice.
 
